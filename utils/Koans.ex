@@ -56,6 +56,8 @@ defmodule Koans.About_testing do
     end
 
     def start_exUnit! do
+      ExUnit.start
+
         unless Koans.About_testing.exUnit_started? do
             Koans.meditate "you should start a ExUnit server to automatically run your test case"
         end
